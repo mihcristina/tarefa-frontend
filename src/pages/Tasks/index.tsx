@@ -52,7 +52,7 @@ const Tasks: React.FC = () => {
 //Finished
 
     const toggleChecked = async (id: number) => {
-        await api.patch('/tasks/${id}')
+        await api.patch(`/tasks/${id}`)
         
         loadTasks()
     }
