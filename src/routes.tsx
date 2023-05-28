@@ -8,7 +8,7 @@ import Tasks from './pages/Tasks';
 const Router: React.FC = () => {
     return(
         <Routes>
-            <Route path="/tarefas" Component={Tasks}>
+            <Route path="/" Component={Tasks}>
                 
             </Route>
         </Routes>
