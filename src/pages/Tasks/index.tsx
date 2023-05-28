@@ -51,8 +51,8 @@ const Tasks: React.FC = () => {
 
 //Finished
 
-    const toggleChecked = async (id: number) => {
-        await api.patch(`/tasks/${id}`)
+    const toggleChecked = async (task: ITask) => {
+        await api.patch(`/tasks/${task.id}`, {finished: !task.finished})
         
         loadTasks()
     }
@@ -72,7 +72,7 @@ const Tasks: React.FC = () => {
                 <li key={task.id}>
                     <p  className={task.finished ? 'line-with-through' : 'line-without-through'}>{task.title}</p>
                     <div className='flex'>
-                        <button className='items-button' onClick={() => toggleChecked(task.id)}>
+                        <button className='items-button' onClick={() => toggleChecked(task)}>
                             <i className='bx bx-check' ></i>
                         </button>
                         <button className='items-button' onClick={() => removeTask(task.id)}>
