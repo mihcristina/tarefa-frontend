@@ -70,7 +70,7 @@ const Tasks: React.FC = () => {
             {   
                 tasks.map(task => (
                 <li key={task.id}>
-                    <p className={task.finished ? 'line-with-through' : 'line-without-through'}>{task.title}</p>
+                    <p  className={task.finished ? 'line-with-through' : 'line-without-through'}>{task.title}</p>
                     <div className='flex'>
                         <button className='items-button' onClick={() => toggleChecked(task.id)}>
                             <i className='bx bx-check' ></i>
