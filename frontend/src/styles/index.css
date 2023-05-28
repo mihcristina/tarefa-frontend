@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 895px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 25px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #F51869;
+}
+
+input {
+    padding: 8px 24px;
+    width: 224px;
+    height: 50px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #F51869;
+
+}
+
+::placeholder {
+    font-weight: 700;
+    font-size: 16px;
+    color: #F51869;
+}
+
+.principal-button {
+    width: 112px;
+    height: 50px;
+    background: #F51869;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fbfbfb;
+    cursor: pointer;
+
+    :hover {
+        opacity: 0.8;
+    }
+
+    :active {
+        opacity: 0.6;
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.spacer {   
+    margin: 10px;
+}
+
+li {
+    padding: 13px 10px 13px 24px;
+    width: 354px;
+    height: 50px;
+
+    background: #F51869;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+i {
+    font-size: 24px;
+    text-decoration-line: none;
+    color: #ffffff;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.items-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    :hover {
+        opacity: 0.8;
+    }
+    
+    :active {
+        opacity: 0.6;
+    }
+}
